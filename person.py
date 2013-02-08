@@ -3,7 +3,7 @@ class Person:
 		args = args.split(',')
 		if len(args) != 4:
 			raise Exception("Invalid line")
-		self.name = args[0] + args[1]
+		self.name = args[0] + " " + args[1]
 		self.work_hours = int(args[2])
 		self.done = False
 		sched = args[3].split(' ')
